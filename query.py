@@ -2,6 +2,7 @@
 # coding:utf-8
 import requests
 import re
+from setting import url,stu,courses
 # http://210.27.12.1:90/queryDegreeScoreAction.do?studentid=xdleess20120514sn1585&degreecourseno=0821005
 
 def getScore(url,stu,course):
@@ -27,30 +28,7 @@ def getAllScore(url,stu,courses):
 		scores.append(getScore(url,stu,course))
 	return scores
 
-
 if __name__ == '__main__':
-	url = 'http://210.27.12.1:90/queryDegreeScoreAction.do'
-	stu = 'xdleess20120514sn1585'
-	courses = [
-		'0022001',
-		'0321003',
-		'0321007',
-		'0321011',
-		'0321020',
-		'0321022',
-		'0322102',
-		'0821001',
-		'0821100',
-		'0821101',
-		'0022002',
-		'0022004',
-		'0321006',
-		'0322208',
-		'0821001',
-		'0821005',
-		'0821102',
-		'0821004',
-		]
 	scores = getAllScore(url,stu,courses)
 	print u'课程名称,学分,成绩'
 	for each in scores:
