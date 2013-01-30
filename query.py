@@ -52,6 +52,6 @@ if __name__ == '__main__':
 		'0821004',
 		]
 	scores = getAllScore(url,stu,courses)
-	print '课程名称,学分,成绩'
+	print u'课程名称,学分,成绩'
 	for each in scores:
 		print "%s,%s,%s" % (each[1], each[2], each[4])
