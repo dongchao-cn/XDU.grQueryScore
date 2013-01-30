@@ -29,6 +29,10 @@ def getAllScore(url,stu,courses):
 	return scores
 
 if __name__ == '__main__':
+	assert(url)
+	assert(stu)
+	assert(courses)
+	print 'querying please wait...'
 	scores = getAllScore(url,stu,courses)
 	print u'课程名称,学分,成绩'
 	for each in scores:
