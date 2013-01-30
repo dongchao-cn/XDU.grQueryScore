@@ -1,5 +1,5 @@
 url = 'http://210.27.12.1:90/queryDegreeScoreAction.do'
-stu = 'xdleess20120514sn1585'
+stu = '1203121564'
 courses = [
 	'0022001',
 	'0321003',
