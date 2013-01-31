@@ -45,3 +45,4 @@ if __name__ == '__main__':
     print u'课程名称,学分,成绩'
     for each in scores:
         print "%s,%s,%s" % (each[1], each[2], each[4])
+    raw_input(u'查询完毕，按任意键退出!')

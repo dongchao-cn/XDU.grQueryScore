@@ -2,7 +2,6 @@
 # coding:utf-8
 import requests
 import re
-from setting import url,stu,courses
 # http://210.27.12.1:90/queryDegreeScoreAction.do?studentid=xdleess20120514sn1585&degreecourseno=0821005
 
 def getScore(url,stu,course):
