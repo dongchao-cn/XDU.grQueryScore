@@ -18,10 +18,10 @@ def getCourses(body):
     return course
 
 if __name__ == '__main__':
-    stuno = raw_input(u'请输入学号：')
-    stupw = raw_input(u'请输入密码：')
+    stuno = raw_input(u'please input id:')
+    stupw = raw_input(u'please input password:')
 
-    print u'查询中，请稍后...'
+    print u'qerying，please wait...'
     s = requests.Session()
 
     s.get('http://210.27.12.1:90/student/index.jsp')
@@ -45,4 +45,4 @@ if __name__ == '__main__':
     print u'课程名称,学分,成绩'
     for each in scores:
         print "%s,%s,%s" % (each[1], each[2], each[4])
-    raw_input(u'查询完毕，按任意键退出!')
+    raw_input(u'press anykey to exit!')
